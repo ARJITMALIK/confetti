@@ -1,6 +1,47 @@
 <div #main_wrap class="main_wrapper">
-  <button type="button" (mouseenter)="onMouseHover()">Hover me</button>
-  <button class="new_btn" type="button" (mouseenter)="onMouseHover()">
-    Another Hover me
-  </button>
+  <div class="sense_symbol">
+    <h1 [ngStyle]="displaySense ? setSenseStyle() : null">
+      {{ senseSymbol.symbol }}
+    </h1>
+  </div>
+  <div class="btn_wrapper">
+    <button
+      type="button"
+      (mouseenter)="onMouseHover()"
+      (click)="showSense(sense_symbols.danger)"
+    >
+      Danger
+    </button>
+    <button
+      type="button"
+      (mouseenter)="onMouseHover()"
+      (click)="showSense(sense_symbols.poison)"
+    >
+      Poison
+    </button>
+    <button
+      type="button"
+      (mouseenter)="onMouseHover()"
+      (click)="showSense(sense_symbols.heal)"
+    >
+      Heal
+    </button>
+    <button
+      type="button"
+      (mouseenter)="onMouseHover()"
+      (click)="showSense(sense_symbols.burn)"
+    >
+      Burn
+    </button>
+    <button
+      type="button"
+      (mouseenter)="onMouseHover()"
+      (click)="showSense(sense_symbols.death)"
+    >
+      Death
+    </button>
+    <button type="button" (mouseenter)="onMouseHover()" (click)="onClick()">
+      Another Hover me
+    </button>
+  </div>
 </div>

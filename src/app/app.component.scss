@@ -1,15 +1,13 @@
 button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
+  margin: 10px 0px;
   color: white;
   background-color: #0f0e0c;
   padding: 0.8em 1em;
 
   border: 3px solid #545553;
   font-family: "Merriweather", serif;
+  font-weight: bold;
+  letter-spacing: 1px;
   font-size: 1em;
   border-radius: 2px;
   transition: 0.1s ease-in;
@@ -22,6 +20,18 @@ button:hover {
   box-shadow: 0 0 15px #48463a inset;
 }
 
+.btn_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .main_wrapper {
   background-color: #000;
   display: flex;
@@ -30,4 +40,18 @@ button:hover {
 
 .new_btn {
   top: 60%;
+}
+
+.sense_symbol {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 3em;
+  color: transparent;
+}
+
+h1 {
+  font-family: "Noto Sans JP", sans-serif;
 }
