@@ -1,47 +1,44 @@
 <div #main_wrap class="main_wrapper">
   <div class="sense_symbol">
-    <h1 [ngStyle]="displaySense ? setSenseStyle() : null">
-      {{ senseSymbol.symbol }}
+    <h1 [ngStyle]="senses.displaySense ? senses.setSenseStyle() : null">
+      {{ senses.currentSense.symbol }}
     </h1>
   </div>
   <div class="btn_wrapper">
     <button
       type="button"
       (mouseenter)="onMouseHover()"
-      (click)="showSense(sense_symbols.danger)"
+      (click)="onClick(senses.senseSymbols.danger)"
     >
       Danger
     </button>
     <button
       type="button"
       (mouseenter)="onMouseHover()"
-      (click)="showSense(sense_symbols.poison)"
+      (click)="onClick(senses.senseSymbols.poison)"
     >
       Poison
     </button>
     <button
       type="button"
       (mouseenter)="onMouseHover()"
-      (click)="showSense(sense_symbols.heal)"
+      (click)="onClick(senses.senseSymbols.heal)"
     >
       Heal
     </button>
     <button
       type="button"
       (mouseenter)="onMouseHover()"
-      (click)="showSense(sense_symbols.burn)"
+      (click)="onClick(senses.senseSymbols.burn)"
     >
       Burn
     </button>
     <button
       type="button"
       (mouseenter)="onMouseHover()"
-      (click)="showSense(sense_symbols.death)"
+      (click)="onClick(senses.senseSymbols.death)"
     >
       Death
-    </button>
-    <button type="button" (mouseenter)="onMouseHover()" (click)="onClick()">
-      Another Hover me
     </button>
   </div>
 </div>
