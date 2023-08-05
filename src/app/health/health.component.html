@@ -1,1 +1,47 @@
-<p>health works!</p>
+<div class="container">
+  <div class="res_nodes">
+    <div
+      class="res_node"
+      [ngStyle]="
+        resNodes[0]
+          ? { 'background-color': '#bf4c75' }
+          : { 'background-color': 'gray' }
+      "
+    >
+      <h2><i class="nf nf-md-leaf_circle"></i></h2>
+    </div>
+    <div
+      class="res_node"
+      [ngStyle]="
+        resNodes[1]
+          ? { 'background-color': '#bf4c75' }
+          : { 'background-color': 'gray' }
+      "
+    >
+      <h2><i class="nf nf-md-leaf_circle"></i></h2>
+    </div>
+    <div
+      class="res_node"
+      [ngStyle]="
+        resNodes[2]
+          ? { 'background-color': '#bf4c75' }
+          : { 'background-color': 'gray' }
+      "
+    >
+      <h2><i class="nf nf-md-leaf_circle"></i></h2>
+    </div>
+  </div>
+  <div class="health_bar" [ngStyle]="{ 'width.em': maxHealth }">
+    <div class="hp_container" [ngStyle]="{ 'width.em': maxHealth }">
+      <div class="hp" [ngStyle]="{ 'width.em': hp }"></div>
+    </div>
+  </div>
+  <div class="status">
+    <div class="poisoned_state">{{ status.poison.symbol }}</div>
+    <div class="burned_state">{{ status.burn.symbol }}</div>
+  </div>
+  <!-- <div class="controls"> -->
+  <!--   <button class="btn" (click)="addHealth()">Heal health</button> -->
+  <!--   <button class="btn" (click)="takeDamage()">Damage health</button> -->
+  <!-- </div> -->
+</div>

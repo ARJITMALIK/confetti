@@ -1,0 +1,82 @@
+.container {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  color: #fff;
+}
+
+.res_nodes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.res_node {
+  width: 2em;
+  height: 2em;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-right: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1em;
+}
+
+.faded_border {
+  border-width: 4px;
+  border-style: solid;
+  border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
+
+.health_bar {
+  margin-top: 0.5em;
+  background-color: transparent;
+  height: 2em;
+  border-left-width: 3px;
+  border-right-width: 3px;
+  border-bottom-width: 0px;
+  border-top-width: 0px;
+  border-style: solid;
+  border-image: linear-gradient(0deg, black, white, black) 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hp_container {
+  background-color: #2b2b2b;
+  box-shadow: #000 0 0 10px inset;
+}
+
+.hp {
+  height: 1em;
+  background-image: linear-gradient(to left, white, 1px, maroon);
+}
+
+.status {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.poisoned_state {
+  text-shadow: green 0 0 10px, green 0 0 15px, green 0 0 20px;
+  color: green;
+  padding-right: 0.2em;
+}
+
+.burned_state {
+  text-shadow: orange 0 0 10px, orange 0 0 15px, orange 0 0 20px;
+  color: orange;
+  text-shadow: orange 0 0 10px;
+}

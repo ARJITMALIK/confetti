@@ -1,4 +1,7 @@
 <div #main_wrap class="main_wrapper">
+  <div class="health">
+    <app-health></app-health>
+  </div>
   <div class="sense_symbol">
     <h1 [ngStyle]="senses.displaySense ? senses.setSenseStyle() : null">
       {{ senses.currentSense.symbol }}

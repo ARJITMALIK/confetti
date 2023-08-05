@@ -20,7 +20,7 @@ export class SenseService {
       color: '#9df5c6',
     },
     poison: {
-      symbol: '毒',
+      symbol: '生',
       color: 'green',
     },
     burn: {
